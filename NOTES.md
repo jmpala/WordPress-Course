@@ -32,8 +32,10 @@ Template Files
 
 Other files
 - functions.php -> configuration and resources loading
-  - wp_enqueue_style() -> load the css files
-  - wp_enqueue_script() -> load the js files
+  - wp_enqueue_style() -> load the css files on hook wp_enqueue_scripts
+  - wp_enqueue_script() -> load the js files on hook wp_enqueue_scripts
+  - add_theme_support() -> on hook after_setup_theme
+    - title-tag -> sets the title for each page
 
 ## WORDPRESS FUNCTIONS:
 - have_posts() -> returns if there are any pending post
@@ -41,6 +43,7 @@ Other files
 - the_title() -> returns the title of the current iterated post
 - the_content() -> returns the content of the current iterated post
 - the_permalink() -> returns the permanent link for the current iterated post
+- site_url() -> returns the root path
 
 - bloginfo($param)
   - 'name' -> returs the **Site Title** of the website in **General Settings**
