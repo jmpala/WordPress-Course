@@ -40,6 +40,7 @@ Template Files
   - get_footer() -> returns the footer
   - wp_footer() -> load js scripts added on functions.php
 - front-page.php -> home page
+- archive.php -> archive page
 
 Other files
 - functions.php -> configuration and resources loading
@@ -66,6 +67,8 @@ We can add classes into the Body tag
 - get_permalink() -> returns the permalink of param
 - site_url() -> returns the root path
 - paginate_links() -> gives the pagination for the blogs
+
+- single_cat_title() -> returns the category title for archive page
 
 - bloginfo($param)
   - 'name' -> returs the **Site Title** of the website in **General Settings**
