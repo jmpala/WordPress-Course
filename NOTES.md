@@ -30,7 +30,7 @@ https://developer.wordpress.org/git
 
 ## WORDPRESS CONCEPTS
 Template Files
-- index.php -> 
+- index.php -> powers the generic blog listing
 - single.php -> used to show single posts
 - page.php -> used to show pages
 - header.php -> contains the header
@@ -39,6 +39,7 @@ Template Files
 - footer.php -> contains the footer
   - get_footer() -> returns the footer
   - wp_footer() -> load js scripts added on functions.php
+- front-page.php -> home page
 
 Other files
 - functions.php -> configuration and resources loading
@@ -73,6 +74,10 @@ We can add classes into the Body tag
 
 - wp_list_pages() -> use to return list of pages acording an Associative array
 
+- the_author_posts_link() -> returns the name of author with link to its archive
+- the_time() -> parameter to set the time format
+  - https://wordpress.org/support/article/formatting-date-and-time/
+- get_the_category_list() -> on param set chat to divide categories
 
 ## WORDPRESS Utils:
 See if page has children
