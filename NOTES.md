@@ -56,6 +56,7 @@ We can add classes into the Body tag
 
 ## WORDPRESS FUNCTIONS:
 - have_posts() -> returns if there are any pending post
+- get_post_type() -> returns the type of the post returned
 - get_the_ID() -> returns the ID of the current post
 - wp_get_post_parent_id() -> returns the ID of the parent of the parameter
 - the_post() -> iterate to the post
