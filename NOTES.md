@@ -65,6 +65,7 @@ We can add classes into the Body tag
 - the_permalink() -> returns the permanent link for the current iterated post
 - get_permalink() -> returns the permalink of param
 - site_url() -> returns the root path
+- paginate_links() -> gives the pagination for the blogs
 
 - bloginfo($param)
   - 'name' -> returs the **Site Title** of the website in **General Settings**
@@ -77,7 +78,7 @@ We can add classes into the Body tag
 - the_author_posts_link() -> returns the name of author with link to its archive
 - the_time() -> parameter to set the time format
   - https://wordpress.org/support/article/formatting-date-and-time/
-- get_the_category_list() -> on param set chat to divide categories
+- get_the_category_list() -> on param set chat to divide categoriesgit 
 
 ## WORDPRESS Utils:
 See if page has children
