@@ -86,6 +86,7 @@ add_action('init', 'university_post_types');
 - the_content() -> returns the content of the current iterated post
 - the_permalink() -> returns the permanent link for the current iterated post
 - get_permalink() -> returns the permalink of param
+- get_post_type_archive_link() -> returns the link for a param post type
 - site_url() -> returns the root path
 - paginate_links() -> gives the pagination for the blogs
 
