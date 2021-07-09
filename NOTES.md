@@ -90,3 +90,16 @@ See if page has children
         'child_of' => get_the_ID()
   ));
 ```
+
+## Custom queries
+```php
+  $homePagePosts = new WP_Query(array(
+    'posts_per_page' => '2',
+  ));
+
+  while($homePagePosts->have_posts()) {
+    $homePagePosts->the_post();
+    /** code to iterate */    
+  }
+  wp_reset_postdata();  // Important to reset the query object
+```
