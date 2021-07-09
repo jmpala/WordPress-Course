@@ -1,5 +1,5 @@
 https://codex.wordpress.org/
-https://developer.wordpress.org/
+https://developer.wordpress.org/git
 
 ## Configuration
 - We can set the **Theme** info on style.css like:
@@ -19,6 +19,13 @@ https://developer.wordpress.org/
 - ```php
     $myArray = array('John', 'Thomas', 'Jill');
     echo "<p>$myArray[0]</p>";
+  ```
+  Associative array
+  ```php
+    $myAssArray = array('John'    => 12,
+                        'Thomas'  => 13,
+                        'Jill'    => 14);
+    echo "<p>$myAssArray['John']</p>";
   ```
 
 ## WORDPRESS CONCEPTS
@@ -46,9 +53,11 @@ Other files
 - wp_get_post_parent_id() -> returns the ID of the parent of the parameter
 - the_post() -> iterate to the post
 - the_title() -> returns the title of the current iterated post
+- get_the_title() -> returns the title of param
 - get_the_title -> returns the title of the parameter ID
 - the_content() -> returns the content of the current iterated post
 - the_permalink() -> returns the permanent link for the current iterated post
+- get_permalink() -> returns the permalink of param
 - site_url() -> returns the root path
 
 - bloginfo($param)
@@ -56,3 +65,14 @@ Other files
   - 'description' -> returs the **Tagline** of the website in **General Settings**
 
 - get_theme_file_uri() -> used to build the complete url for the resourse
+
+- wp_list_pages() -> use to return list of pages acording an Associative array
+
+
+## WORDPRESS Utils:
+See if page has children
+```php
+  $testArray = get_pages(array(
+        'child_of' => get_the_ID()
+  ));
+```
