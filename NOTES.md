@@ -1,3 +1,6 @@
+https://codex.wordpress.org/
+https://developer.wordpress.org/
+
 ## Configuration
 - We can set the **Theme** info on style.css like:
   - Theme Name: Fictional University
