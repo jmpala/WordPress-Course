@@ -47,6 +47,11 @@ Other files
   - add_theme_support() -> on hook after_setup_theme
     - title-tag -> sets the title for each page
 
+We can add classes into the Body tag
+```html
+<body <?php body_class(); ?>>
+```
+
 ## WORDPRESS FUNCTIONS:
 - have_posts() -> returns if there are any pending post
 - get_the_ID() -> returns the ID of the current post
