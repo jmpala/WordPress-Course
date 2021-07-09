@@ -32,6 +32,7 @@ https://developer.wordpress.org/git
 Template Files
 - index.php -> powers the generic blog listing
 - single.php -> used to show single posts
+- single-[posttype] -> for custom post types
 - page.php -> used to show pages
 - header.php -> contains the header
   - get_header() -> returns the header
@@ -52,6 +53,25 @@ Other files
 We can add classes into the Body tag
 ```html
 <body <?php body_class(); ?>>
+```
+
+We can create diferent post types
+We can unse the "mu-plugins" folder for this
+```php
+function university_post_types() {
+    register_post_type('event', array(
+        'public' => true,
+        'labels' => array(
+            'name' => 'Events',
+            'add_new_item' => 'Add new Event',
+            'edit_item' => 'Edit Event',
+            'all_items' => 'All Events',
+            'singular_name' => 'Event',
+        ),
+        'menu_icon' => 'dashicons-calendar',
+    ));
+}
+add_action('init', 'university_post_types');
 ```
 
 ## WORDPRESS FUNCTIONS:
