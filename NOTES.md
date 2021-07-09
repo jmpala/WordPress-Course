@@ -39,8 +39,11 @@ Other files
 
 ## WORDPRESS FUNCTIONS:
 - have_posts() -> returns if there are any pending post
+- get_the_ID() -> returns the ID of the current post
+- wp_get_post_parent_id() -> returns the ID of the parent of the parameter
 - the_post() -> iterate to the post
 - the_title() -> returns the title of the current iterated post
+- get_the_title -> returns the title of the parameter ID
 - the_content() -> returns the content of the current iterated post
 - the_permalink() -> returns the permanent link for the current iterated post
 - site_url() -> returns the root path
