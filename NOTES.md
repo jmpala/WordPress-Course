@@ -127,3 +127,15 @@ See if page has children
 ```
 
 Advanced Custom Fields is a usefull plugin to add custom-fields to the "posts"
+
+Pagination needs to be set up as follow
+```php
+  $customQuery = new WP_Query(array(
+            'paged' => get_query_var('paged', '1'), // We get the paged property from the page or 1 as default
+            /** More properties */
+  ));
+
+  echo paginate_links(array(
+            'total' => $customQuery->max_num_pages, // We get the property of pages from custom query
+  ));
+```
