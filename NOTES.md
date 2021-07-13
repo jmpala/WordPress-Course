@@ -125,3 +125,5 @@ See if page has children
   }
   wp_reset_postdata();  // Important to reset the query object
 ```
+
+Advanced Custom Fields is a usefull plugin to add custom-fields to the "posts"
